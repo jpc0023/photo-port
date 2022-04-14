@@ -5,7 +5,6 @@ import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
 
-
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
@@ -30,6 +29,7 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
+        
         {!contactSelected ? (
           <>
           <Gallery currentCategory={currentCategory}></Gallery>
